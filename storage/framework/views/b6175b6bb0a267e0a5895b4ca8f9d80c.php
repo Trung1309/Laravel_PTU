@@ -36,6 +36,7 @@
                 <li><a href="<?php echo e(url('login')); ?>"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 <li><a href="<?php echo e(url('registration')); ?>"><span class="glyphicon glyphicon-user"></span> Register</a></li>
             <?php else: ?>
+                <li><a><?php echo e(Auth::user()->name); ?></a></li>
                 <li><a href="<?php echo e(url('logout')); ?>"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
             <?php endif; ?>
         </ul>

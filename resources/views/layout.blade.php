@@ -36,6 +36,7 @@
                 <li><a href="{{ url('login') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 <li><a href="{{ url('registration') }}"><span class="glyphicon glyphicon-user"></span> Register</a></li>
             @else
+                <li><a>{{ Auth::user()->name }}</a></li>
                 <li><a href="{{ url('logout') }}"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
             @endguest
         </ul>
